@@ -61,7 +61,7 @@ img {vertical-align: middle;}
   .prev, .next,.text {font-size: 11px}
 }
 
-.tooltip .tooltiptext {
+.tooltip, .tooltiptext {
   visibility: hidden;
   width: 320px;
   background-color: #555;
@@ -89,7 +89,7 @@ img {vertical-align: middle;}
   /* border-color: #555 transparent transparent transparent; */
 /* } */
 
-.tooltip:hover .tooltiptext {
+.tooltip:hover, .tooltiptext {
   visibility: visible;
   opacity: 1;
 }
