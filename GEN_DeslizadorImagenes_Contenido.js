@@ -43,5 +43,6 @@ function creaImagenes(textoBase,lista) {
 		document.write(texto4);  
 	}
 	document.write('</div>');  
+	document.write('<p>Prueba 1</p>');  
 	document.write('<script type="text/javascript" src="GEN_DeslizadorImagenes.js"></script>');  
 }
