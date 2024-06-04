@@ -76,7 +76,7 @@ img {vertical-align: middle;}
   margin-left: -60px;
   opacity: 0;
   transition: opacity 0.3s;
-  }
+}
 
 /* .tooltip .tooltiptext::after { */
   /* content: ""; */
@@ -89,7 +89,7 @@ img {vertical-align: middle;}
   /* border-color: #555 transparent transparent transparent; */
 /* } */
 
-.tooltip:hover, .tooltiptext {
+.tooltip:hover .tooltiptext {
   visibility: visible;
   opacity: 1;
 }

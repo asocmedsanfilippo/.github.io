@@ -31,7 +31,8 @@ function creaImagenes(textoBase,lista) {
 	document.write('<a class="next" onclick="plusSlides(1)">&#10095;</a>');  
 	document.write('</div>');  
 	document.write('<br>');  
-	document.write('<div class="w3-container w3-content w3-center" >');  
+	// document.write('<div class="w3-display-container w3-content w3-center" >');  
+	document.write('<div class="w3-display-container w3-center" >');  
 	for (i = 1; i <= numSlides; i++) {
 		var texto4 = '<span class="dot tooltip " onclick="currentSlide('
 		texto4 = texto4.concat(i)
