@@ -61,7 +61,7 @@ img {vertical-align: middle;}
   .prev, .next,.text {font-size: 11px}
 }
 
-.tooltip, .tooltiptext {
+.tooltip .tooltiptext {
   visibility: hidden;
   width: 320px;
   background-color: #555;
