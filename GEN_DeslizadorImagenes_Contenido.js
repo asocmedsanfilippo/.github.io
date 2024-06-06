@@ -2,7 +2,7 @@ function creaImagenes(textoBase,lista) {
 	var numSlides = lista.length;
 	document.write('<div class="w3-display-container slideshow-container">');  
 	for (i = 1; i <= numSlides; i++) {
-		document.write('<div class="mySlides fade">');
+		document.write('<div class="mySlides ">');
 		// var texto1 = '<div class="numbertext">'
 		// texto1 = texto1.concat(i)
 		// texto1 = texto1.concat(' / ')
