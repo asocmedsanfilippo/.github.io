@@ -28,7 +28,7 @@ function creaImagenes(textoBase,lista) {
 		{
 			document.write(texto2);  
 			var textoDona = '';
-			textoDona = textoDona.concat('<a href="Donar.html"><button class="btn der75centroV ">DONA</button></a>');
+			textoDona = textoDona.concat('<a href="Donar.html"><button class="btn der75centroV"><span>DONA</span></button></a>');
 			document.write(textoDona);
 		}
 		else
