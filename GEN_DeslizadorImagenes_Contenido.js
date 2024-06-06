@@ -2,7 +2,7 @@ function creaImagenes(textoBase,lista) {
 	var numSlides = lista.length;
 	document.write('<div class="w3-display-container slideshow-container">');  
 	for (i = 1; i <= numSlides; i++) {
-		document.write('<div class="mySlides ">');
+		document.write('<div class="mySlides">');
 		// var texto1 = '<div class="numbertext">'
 		// texto1 = texto1.concat(i)
 		// texto1 = texto1.concat(' / ')
@@ -15,7 +15,7 @@ function creaImagenes(textoBase,lista) {
 		rutaImagenSinExt = rutaImagenSinExt.concat(('0' + i).substr(-4))
 		var texto2 = '<a href="'
 		texto2 = texto2.concat(rutaImagenSinExt)
-		texto2 = texto2.concat('.jpg" target="blank">')
+		texto2 = texto2.concat('.html" target="blank">')
 		texto2 = texto2.concat('<img src="')
 		texto2 = texto2.concat(rutaImagenSinExt)
 		texto2 = texto2.concat('.jpg" style="width:100%">')
@@ -40,8 +40,6 @@ function creaImagenes(textoBase,lista) {
 	document.write('<a class="prev" onclick="plusSlides(-1)">&#10094;</a>');  
 	document.write('<a class="next" onclick="plusSlides(1)">&#10095;</a>');  
 	document.write('</div>');  
-	document.write('<br>');  
-	// document.write('<div class="w3-display-container w3-content w3-center" >');  
 	document.write('<div class="w3-display-container w3-content w3-center" style="max-width:800px">');  
 	for (i = 1; i <= numSlides; i++) {
 		var texto4 = '<span class="dot tooltip " onclick="currentSlide('
