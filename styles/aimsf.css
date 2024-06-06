@@ -59,11 +59,6 @@ img {vertical-align: middle;}
   background-color: #717171;
 }
 
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .prev, .next,.text {font-size: 11px}
-}
-
 .tooltip .tooltiptext {
   max-width:800px;
   visibility: hidden;
@@ -114,24 +109,31 @@ a:active {
   text-decoration: underline;
 }
 
-.btn {
+.btnDona {
   background-color: MediumOrchid;
   color: white;
   font-size: 16px;
-  padding: 12px 24px;
   border: none;
   cursor: pointer;
   border-radius: 5px;
   font-weight:bold;
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4), 0 6px 20px 0 rgba(0,0,0,0.38);
+  box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.5),15px 15px 8px rgba(128, 0, 128, 0.2);
+  position: absolute;
+  width: 250px; 
+  height: 80px;
+  font-size: 24px;
+  padding: 12px 24px;
+  top: 50%;
+  left: 75%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
 }
-
-/* .btn:hover {
+ /* .btnDona:hover {
   background-color: black;
 } 
  */
  
-/* .btn {
+/* .btnDona {
   display: inline-block;
   border-radius: 4px;
   background-color: #f4511e;
@@ -146,14 +148,14 @@ a:active {
   margin: 5px;
 } */
  
-.btn span {
+.btnDona span {
   cursor: pointer;
   display: inline-block;
   position: relative;
   transition: 0.5s;
 }
 
-.btn span:after {
+.btnDona span:after {
   content: '\00bb';
   position: absolute;
   opacity: 0;
@@ -162,20 +164,26 @@ a:active {
   transition: 0.5s;
 }
 
-.btn:hover span {
+.btnDona:hover span {
   padding-right: 25px;
 }
 
-.btn:hover span:after {
+.btnDona:hover span:after {
   opacity: 1;
   right: 0;
 }
 
-
-.der75centroV {
-  position: absolute;
-  top: 50%;
-  left: 75%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 500px) {
+  .prev, .next,.text {font-size: 11px}
+  .btnDona {
+	width: 140px; 
+	height: 43px; 
+	font-size: 22px; 
+	padding: 5px 12px;
+	top: 64%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+}
 }

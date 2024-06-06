@@ -16,9 +16,20 @@ function creaImagenes(textoBase,lista) {
 		var texto2 = '<a href="'
 		texto2 = texto2.concat(rutaImagenSinExt)
 		texto2 = texto2.concat('.html" target="blank">')
+		texto2 = texto2.concat('<picture>')
+		texto2 = texto2.concat('<source srcset="')
+		texto2 = texto2.concat(rutaImagenSinExt)
+		texto2 = texto2.concat('_V.jpg" media="(max-width: 500px)">')
+		texto2 = texto2.concat('<source srcset="')
+		texto2 = texto2.concat(rutaImagenSinExt)
+		texto2 = texto2.concat('.jpg" media="(max-width: 2000px)">')
+		texto2 = texto2.concat('<source srcset="')
+		texto2 = texto2.concat(rutaImagenSinExt)
+		texto2 = texto2.concat('.jpg">')
 		texto2 = texto2.concat('<img src="')
 		texto2 = texto2.concat(rutaImagenSinExt)
 		texto2 = texto2.concat('.jpg" style="width:100%">')
+		texto2 = texto2.concat('</picture>')
 		texto2 = texto2.concat('</a>')
 		// var texto3 = '<div class="text">'
 		// texto3 = texto3.concat(lista[i - 1])
@@ -28,7 +39,8 @@ function creaImagenes(textoBase,lista) {
 		{
 			document.write(texto2);  
 			var textoDona = '';
-			textoDona = textoDona.concat('<a href="Donar.html"><button class="btn der75centroV"><span>DONA</span></button></a>');
+			// textoDona = textoDona.concat('<a href="Donar.html"><button class="btnDona" ><span>DONA&nbsp;<img src="images/asistencia-social.gif" alt="" style="display: inline; border-width: 0px; height:22px"></span></button></a>');
+			textoDona = textoDona.concat('<a href="Donar.html"><button class="btnDona" ><span>DONA&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-beat fa-hand-holding-heart"></i></span></button></a>');
 			document.write(textoDona);
 		}
 		else
