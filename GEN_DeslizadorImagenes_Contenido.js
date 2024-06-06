@@ -20,11 +20,21 @@ function creaImagenes(textoBase,lista) {
 		texto2 = texto2.concat(rutaImagenSinExt)
 		texto2 = texto2.concat('.jpg" style="width:100%">')
 		texto2 = texto2.concat('</a>')
-		document.write(texto2);  
 		// var texto3 = '<div class="text">'
 		// texto3 = texto3.concat(lista[i - 1])
 		// texto3 = texto3.concat('</div>')
-		// document.write(texto3);  
+		// document.write(texto3);
+		if (i ==1)
+		{
+			document.write(texto2);  
+			var textoDona = '';
+			textoDona = textoDona.concat('<a href="Donar.html"><button class="btn der75centroV ">DONA</button></a>');
+			document.write(textoDona);
+		}
+		else
+		{
+			document.write(texto2);  
+		}
 		document.write('</div>');  
 	}
 	document.write('<a class="prev" onclick="plusSlides(-1)">&#10094;</a>');  
