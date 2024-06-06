@@ -38,8 +38,7 @@ function creaImagenes(textoBase,lista) {
 		texto4 = texto4.concat(i)
 		texto4 = texto4.concat(')">')
 		texto4 = texto4.concat('<span class="tooltiptext">')
-		// texto4 = texto4.concat(lista[i - 1])
-		texto4 = texto4.concat(i - 1)
+		texto4 = texto4.concat(lista[i - 1])
 		texto4 = texto4.concat('</span>')
 		texto4 = texto4.concat('</span>')
 		document.write(texto4);  
